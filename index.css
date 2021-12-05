@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.circles {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.gle1, .gle2, .gle3, .gle4 {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    display: inline;
+}
+.gle1 {
+    left: 40vw;
+    background-color: #4284f4;
+    animation: gle_ani 1.5s linear 1s infinite;
+}
+.gle2 {
+    left: 45vw;
+    background-color: #fbbc04;
+    animation: gle_ani 1.5s linear 1.25s infinite;
+}
+.gle3 {
+    left: 50vw;
+    background-color: #24a842;
+    animation: gle_ani 1.5s linear 1.50s infinite;
+}
+.gle4 {
+    left: 55vw;
+    background-color: #ea4224;
+    animation: gle_ani 1.5s linear 1.75s infinite;
+}
+@keyframes gle_ani {
+    0% {top: 50%;}
+    20% {top: 45%;}
+    35% {top: 50%;}
+    64% {top: 50%;}
+    65% {transform: scale(1,1);}
+    75% {transform: scale(4,4);}
+    85% {transform: scale(1,1);}
+    100% {top: 50%;}
+}
